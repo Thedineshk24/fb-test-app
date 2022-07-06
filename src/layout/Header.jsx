@@ -22,6 +22,8 @@ import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutline
 import NotificationsOutlinedIcon from '@mui/icons-material/NotificationsOutlined';
 import { Facebook } from '@mui/icons-material';
 import { Autocomplete, InputAdornment, TextField } from '@mui/material';
+import faceBookUser from '../sample/facebook';
+
 
 const settings = ['Profile', 'Account', 'Messenger', 'Settings', 'Logout'];
 
@@ -193,7 +195,7 @@ const Header = () => {
                     <Box sx={{ flexGrow: 0 }}>
                         <Tooltip title="Open settings">
                             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                                <Avatar alt={faceBookUser.user.name} src={faceBookUser.user.profile_picture} />
                             </IconButton>
                         </Tooltip>
                         <Menu

@@ -10,8 +10,8 @@ export default function FaceBookCard() {
   return (
     <div className='card'>
     {
-      faceBookUser.posts.map(post => (
-        <Card sx={{ maxWidth: 345, marginTop : 3 }}>
+      faceBookUser.posts.map((post, key) => (
+        <Card key={key} sx={{ maxWidth: 345, marginTop : 3 }}>
         <CardActionArea>
           <CardMedia
             component="img"
