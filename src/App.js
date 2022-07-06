@@ -1,15 +1,13 @@
 import './App.css';
 import FaceBookCard from './components/Card';
 import Header from './layout/Header';
-
+import ErrorBoundary from './ErrorBoundary/ErrorBoundary';
 function App() {
   return (
-    <>
-     <Header />
-     <div className='card'>
-     <FaceBookCard />
-     </div>
-    </>
+    <ErrorBoundary>
+      <Header />
+      <FaceBookCard />
+    </ErrorBoundary>
   );
 }
 

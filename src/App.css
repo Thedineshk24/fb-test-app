@@ -6,3 +6,10 @@
   margin-top: 10px;
 }
 
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
